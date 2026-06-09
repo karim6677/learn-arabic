@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تعلم اللغة العربية</title>
+    
+    <style>
+        body {
+            background-color: navy;
+            color: white;
+            font-family: sans-serif;
+        }
+
+         h2 {
+            text-align: center;
+        }
+h1{text-align: center; color: red; }
+        /* المربع الكبير الذي يجمع الصورة والأزرار ويجعلهما جنباً إلى جنب */
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        /* تنسيق الصورة */
+        .book-img {
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* تنسيق مربع الأزرار */
+        .div1 {
+            border: 1px solid white;
+            padding: 20px;
+            width: 220px;
+            border-radius: 10px;
+        }
+
+        /* إلغاء النقط الخاصة بالقائمة */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* تنسيق الأزرار الدائرية */
+        .my-btn {
+            display: block; /* جعلت كل زرار يأخذ سطر مستقل داخل المربع */
+            background-color: white;
+            color: navy;
+            padding: 10px 20px;
+            margin: 10px 0;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 25px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        /* تأثير عند مرور الماوس فوق الزرار */
+        .my-btn:hover {
+            background-color: #e6f2ff;
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+
+    <h1>أهلاً بك في تعلم اللغة العربية </h1>
+    <h2>ماذا ستتعلم في هذا الموقع؟</h2>
+
+    <div class="main-content">
+        
+    
+        <div class="div1">
+            <ul>
+                <li><a class="my-btn" href="./eras.html">الإعراب</a></li>
+                <li><a class="my-btn" href="./nahw.html">النحو</a></li>
+                <li><a class="my-btn" href="./thrawa.html">الثروة اللغوية</a></li>
+            </ul>
+        </div>
+ <div class="book-container">
+            <img src="OIP.webp" alt="كتاب لغتي العربية" class="book-img">
+        </div>
+    </div>
+
+</body>
+</html>
