@@ -17,6 +17,25 @@
 
     
 
+<!-- مكان إعلان الموبايل الصغير -->
+<div class="mobile-ad">
+    <!-- الصق هنا كود إعلان Adsterra مقاس 320x50 بالكامل -->
+    <script>
+  atOptions = {
+    'key' : '8fc8caed51f87736e25ce50a91cfde38',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/8fc8caed51f87736e25ce50a91cfde38/invoke.js"></script>
+
+</div>
+
+<!-- مكان إعلان الكمبيوتر الكبير -->
+<div class="desktop-ad">
+    <!-- الصق هنا كود إعلان Adsterra مقاس 728x90 بالكامل -->
     <script>
   atOptions = {
     'key' : '15a41fe14c15f5b59694725f5b121a49',
@@ -28,16 +47,23 @@
 </script>
 <script src="https://www.highperformanceformat.com/15a41fe14c15f5b59694725f5b121a49/invoke.js"></script>
 
-    <script>
-  atOptions = {
-    'key' : '8fc8caed51f87736e25ce50a91cfde38',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/8fc8caed51f87736e25ce50a91cfde38/invoke.js"></script>
+</div>
+
+<!-- كود التحكم البرمجي في الإخفاء والإظهار حسب نوع الجهاز -->
+<style>
+    /* في الشاشات الصغيرة (الموبايل): أخفِ إعلان الكمبيوتر وأظهر إعلان الموبايل */
+    @media (max-width: 767px) {
+        .desktop-ad { display: none !important; }
+        .mobile-ad { display: block !important; text-align: center; margin: 10px 0; }
+    }
+    
+    /* في الشاشات الكبيرة (الحاسوب): أخفِ إعلان الموبايل وأظهر إعلان الكمبيوتر */
+    @media (min-width: 768px) {
+        .mobile-ad { display: none !important; }
+        .desktop-ad { display: block !important; text-align: center; margin: 10px 0; }
+    }
+</style>
+
 
 </body>
 </html>
